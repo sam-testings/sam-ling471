@@ -47,7 +47,7 @@ def cleanFileContents(f):
 
     # TODO: Your call to the re.sub function of the regular expression module here.
     # As is, the value of clean_text does not change.
-    p = re.compile(r'[\s]{2,}')
+    p = re.compile(r'[\s+')
     clean_text = p.sub(' ', clean_text)
 
     # Do not forget to return the result!
@@ -125,12 +125,12 @@ def predictSimplistic(counts):
     # You may choose to store a prediction in a variable and then write the return statement outside
     # of the if-else block, or you can have three return statements within the if-else block.
 
-    if pos_count == 0 and neg_count == 0:
-        return NONE
-    elif pos_count > 0 and neg_count == 0:
+    if pos_count > neg_count:
         return POS_REVIEW
-    else:
+    elif pos_count < neg_count:
         return NEG_REVIEW
+    else:
+        return NONE
 
 '''The main function is the entry point of the program.
 When debugging, if you want to start from the very beginning,

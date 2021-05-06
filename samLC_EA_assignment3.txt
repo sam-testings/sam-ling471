@@ -1,0 +1,5 @@
+1) Something that was common in the files that I looked through was the term "good" or "bad" used in a phrase or context that did not refer to the movie itself, or was referring to something the movie did not have. For example, one review said that one of the actors had "good form", but the review was negative to the movie overall. Another review stated that the movie was missing "good material", which is a negative statement but got marked positive by the system. 
+
+2) Precision will tend to be better than recall in this scenario because recall is an indication of how many times our system was correct within that category, and our system is not good at detecting as it is simple. Precision is comparatively high because of the way it's calculated. 
+
+3) Precision for negative reviews may be much higher because people are less likely to have positive things to say about a bad movie, while they may be more likely to have something slightly negative to say about a good movie. 
